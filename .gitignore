@@ -1,0 +1,4 @@
+core/target/
+web/target/
+logs/
+.idea/

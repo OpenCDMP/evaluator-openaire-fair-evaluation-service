@@ -1,0 +1,22 @@
+fair:
+  evaluatorId: "openaire-fair"
+  useSharedStorage: ${FAIR_EVALUATOR_USE_SHARED_STORAGE:false}
+  has-logo: ${FAIR_EVALUATOR_HAS_LOGO:true}
+  logo: ${FAIR_EVALUATOR_LOGO_PATH:classpath:openaire.png}
+  base-url: ${FAIR_EVALUATOR_BASE_URL}
+  configurationFields:
+  userConfigurationFields:
+  useRemoteBenchmarks: ${FAIR_EVALUATOR_USE_REMOTE_BENCHMARKS:true}
+  availableBenchmarks:
+    - id: https://beta.services.openaire.eu/osTrails/benchmarks/FAIR_Literature_V3
+      label: "OpenAIRE Benchmark: FAIR Literature V3"
+      appliesTo:
+        - Plan
+    - id: https://beta.services.openaire.eu/osTrails/benchmarks/FAIR_Literature_V4
+      label: "OpenAIRE Benchmark: FAIR Literature V4"
+      appliesTo:
+        - Plan
+    - id: https://beta.services.openaire.eu/osTrails/benchmarks/FAIR_Data_V2
+      label: "OpenAIRE Benchmark: FAIR Data V2"
+      appliesTo:
+        - Plan
